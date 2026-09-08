@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Station Admin Panel</title>
+<style>
+  body {
+    background: #d8d3c4;
+    color: #202020;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 24px;
+  }
+  .admin-wrap {
+    max-width: 420px;
+    margin: 60px auto 0;
+    background: #eae6da;
+    border: 2px solid #7a7460;
+    padding: 24px 30px;
+  }
+  h1 {
+    font-size: 20px;
+    border-bottom: 3px double #7a7460;
+    padding-bottom: 8px;
+    margin-top: 0;
+  }
+  .meta {
+    font-size: 12px;
+    color: #55503f;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-size: 13px;
+    margin: 14px 0 4px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #a39c85;
+    background: #f4f1e8;
+    font-family: inherit;
+    font-size: 14px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 8px 18px;
+    background: #cfc8b2;
+    border: 1px solid #7a7460;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #bdb59c;
+  }
+  .notice {
+    border: 1px dashed #a39c85;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #55503f;
+    margin-top: 22px;
+  }
+</style>
+</head>
+<body>
+
+<div class="admin-wrap">
+  <h1>Station Admin Panel</h1>
+  <p class="meta">Legacy console &mdash; access restricted to station staff</p>
+
+  <form onsubmit="return false;">
+    <label for="user">Username</label>
+    <input type="text" id="user" name="user" autocomplete="off" />
+
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="pass" autocomplete="off" />
+
+    <button type="submit">Sign In</button>
+  </form>
+
+  <div class="notice">
+    Notice: This console is part of a decommissioned internal system. Sign-in is disabled.
+  </div>
+</div>
+
+</body>
+</html>

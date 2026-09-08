@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>North Pacific Marine Research Station</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<div class="depth-lines" aria-hidden="true"></div>
+
+<header class="navbar">
+  <div class="wrap navbar-inner">
+    <span class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M4 20c4-10 12-10 16 0s12 10 16 0" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      Marine Research Station
+    </span>
+    <nav class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#data">Ocean Data</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <h1>Tracking Life Beneath the Surface</h1>
+      <p class="lede">Exploring the migration, behavior, and hidden stories of marine life across the Pacific.</p>
+      <a class="cta" href="#research">Explore the Research</a>
+    </div>
+    <div class="hero-figure" aria-hidden="true">
+      <svg viewBox="0 0 320 260" class="hero-fish">
+        <ellipse cx="150" cy="130" rx="95" ry="42" fill="url(#fishBody)" />
+        <path d="M235 130 L300 90 L285 130 L300 170 Z" fill="url(#fishBody)" />
+        <path d="M110 95 Q150 70 190 95 L170 108 Q150 100 130 108 Z" fill="#3fbfae" opacity="0.85"/>
+        <circle cx="90" cy="122" r="4.5" fill="#0a1930" />
+        <defs>
+          <linearGradient id="fishBody" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2ec4b6" />
+            <stop offset="1" stop-color="#1b7f92" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="glow-dot d1"></div>
+      <div class="glow-dot d2"></div>
+      <div class="glow-dot d3"></div>
+    </div>
+  </section>
+
+  <section id="research" class="research wrap">
+    <h2>Current Research</h2>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40"><path d="M4 20c4-10 12-10 16 0s12 10 16 0" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Salmon Migration</h3>
+        <p>Long-range acoustic tagging of Pacific salmon populations as they move between spawning rivers and open ocean feeding grounds.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="10" r="3" fill="currentColor"/><path d="M20 10 L20 34 M12 22 L28 22" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Deep Sea Monitoring</h3>
+        <p>Remote submersible surveys of trench ecosystems, cataloguing species that rarely surface into observable light.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40"><path d="M8 30 Q14 24 20 30 T32 30" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M8 20 Q14 14 20 20 T32 20" stroke="currentColor" stroke-width="2.5" fill="none" opacity="0.5"/></svg>
+        </div>
+        <h3>Ocean Temperature</h3>
+        <p>A distributed buoy network recording surface and subsurface temperature drift across major North Pacific currents.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+        </div>
+        <h3>Marine Ecosystems</h3>
+        <p>Long-term population studies tracking how kelp forests and reef systems respond to shifting ocean conditions.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="data" class="incident wrap">
+    <div class="incident-panel">
+      <h2>System Note</h2>
+      <p>During a routine system audit, our engineers discovered inconsistencies in several archived monitoring records. Some data appears to belong to an older research system that is no longer maintained.</p>
+      <p>One of our salmon tracking stations began sending corrupted telemetry shortly before the audit. The station itself appears to be operating normally, but several files and endpoints on the web server seem to have been left behind by a prior research project.</p>
+      <p>The research team believes there may be something hidden inside the station's website. If you're curious, poke around &mdash; the old archive is still out there somewhere.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about wrap">
+    <h2>About the Station</h2>
+    <p>The North Pacific Marine Research Station has operated remote monitoring equipment across the Pacific basin for over a decade, supporting independent researchers studying migration, temperature drift, and deep ocean ecosystems.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>North Pacific Marine Research Station</p>
+    <p class="fine-print">&copy; 2011&ndash;2024 North Pacific Marine Research Station. All rights reserved. Data provided for research purposes only.</p>
+  </div>
+</footer>
+
+</body>
+</html>
