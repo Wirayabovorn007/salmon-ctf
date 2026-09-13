@@ -17,25 +17,7 @@ app.get('/admin', (req, res) => {
 });
 
 app.get('/secret', (req, res) => {
-    res.send(`
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Secret Data</title>
-            <style>
-                body { font-family: sans-serif; padding: 20px; }
-            </style>
-        </head>
-        <body>
-            <h2>Secret Details</h2>
-            <ul>
-                <li><strong>ID:</strong> 1</li>
-                <li><strong>Key:</strong> a2e591ec191fe38e2ebabec95d703556</li>
-                <li><strong>Active:</strong> true</li>
-            </ul>
-        </body>
-        </html>
-    `);
+   res.sendFile(path.join(PUBLIC_DIR, 'secret.html'));
 });
 
 app.get('/style.css', (req, res) => {
