@@ -17,7 +17,7 @@ app.get('/admin', (req, res) => {
 });
 
 app.get('/secret', (req, res) => {
-   res.json({
+   res.send({
         id: 1,
 		key: 'a2e591ec191fe38e2ebabec95d703556',
         active: true
